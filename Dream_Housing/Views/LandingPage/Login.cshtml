@@ -1,0 +1,135 @@
+﻿@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="~/Content/login/images/icons/favicon.ico" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/Content/login/vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/Content/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/Content/login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/Content/login/vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/Content/login/vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/Content/login/vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/Content/login/vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/Content/login/vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/Content/login/css/util.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/login/css/main.css">
+	<!--===============================================================================================-->
+	<style>
+		#alertPlaceholder .alert {
+			position: fixed;
+			top: 20px;
+			right: 20px;
+			width: 300px; /* Set the width of the alert box */
+			z-index: 1050; /* Ensure it appears above other elements */
+		}
+
+		#alertPlaceholder .alert .icon {
+			display: inline-block;
+			margin-right: 10px; /* Space between the icon and the text */
+		}
+	</style>
+</head>
+<body>
+
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('@Url.Content("~/Content/login/images/bg-01.jpg")');">
+			<div class="wrap-login100 p-t-30 p-b-50">
+				<span class="login100-form-title p-b-41">
+					Account Login
+				</span>
+				@using (Html.BeginForm("Login", "LandingPage", FormMethod.Post, new { @class = "login100-form validate-form p-b-33 p-t-5" }))
+				{
+					<div class="wrap-input100 validate-input" data-validate="Enter username">
+						@Html.TextBox("Email", null, new { @class = "input100", placeholder = "Email" })
+						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
+					</div>
+					@Html.ValidationMessage("Email", "", new { @class = "text-danger" })
+					@*@Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })*@
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						@Html.Password("Password", null, new { @class = "input100", placeholder = "Password" })
+						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
+					</div>
+					@Html.ValidationMessage("Password", "", new { @class = "text-danger" })
+
+					<div class="container-login100-form-btn m-t-32">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+				}
+
+				<!-- Alert placeholder -->
+				<div id="alertPlaceholder">
+					@if (!string.IsNullOrEmpty(ViewBag.AlertMessage))
+					{
+						<div class="alert @ViewBag.AlertType alert-white rounded">
+							<button type="button" data-dismiss="alert" aria-hidden="true" class="close">×</button>
+							<div class="icon">
+								@if (ViewBag.AlertType == "alert-success")
+								{
+									<i class="fa fa-check"></i>
+								}
+								else if (ViewBag.AlertType == "alert-danger")
+								{
+									<i class="fa fa-times-circle"></i>
+								}
+								<!-- Add more icons for different alert types as needed -->
+							</div>
+							<strong>@ViewBag.AlertTitle</strong>
+							@ViewBag.AlertMessage
+						</div>
+					}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="dropDownSelect1"></div>
+
+	<!--===============================================================================================-->
+	<script src="~/Content/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="~/Content/login/vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="~/Content/login/vendor/bootstrap/js/popper.js"></script>
+	<script src="~/Content/login/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="~/Content/login/vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="~/Content/login/vendor/daterangepicker/moment.min.js"></script>
+	<script src="~/Content/login/vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="~/Content/login/vendor/countdowntime/countdowntime.js"></script>
+	<!--===============================================================================================-->
+	<script src="~/Content/login/js/main.js"></script>
+
+	<!-- Script to automatically dismiss alerts after some time -->
+	<script>
+		$(document).ready(function () {
+			window.setTimeout(function () {
+				$(".alert").fadeTo(500, 0).slideUp(500, function () {
+					$(this).remove();
+				});
+			}, 4000); // Dismiss alert after 4 seconds
+		});
+	</script>
+
+</body>
+</html>
