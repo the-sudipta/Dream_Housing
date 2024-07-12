@@ -77,3 +77,14 @@ E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\Microsoft.CodeDom.Pro
 E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\obj\Debug\Dream_Ho.262E149C.Up2Date
 E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\obj\Debug\Dream_Housing.dll
 E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\obj\Debug\Dream_Housing.pdb
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\AutoMapper.dll
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\EntityFramework.dll
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\System.Net.Http.Formatting.dll
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\System.Web.Cors.dll
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\System.Web.Http.Cors.dll
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\System.Web.Http.dll
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\AutoMapper.xml
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\EntityFramework.xml
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\System.Net.Http.Formatting.xml
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\System.Web.Http.xml
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\System.Web.Http.Cors.xml
