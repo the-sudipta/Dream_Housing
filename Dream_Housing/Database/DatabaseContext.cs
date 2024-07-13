@@ -1,5 +1,4 @@
-﻿using Dream_Housing.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -10,6 +9,10 @@ namespace Dream_Housing.Database
 
 	public class DatabaseContext : DbContext
 	{
+		//public DatabaseContext() : base("name=DatabaseContext")
+		//{
+		//}
+
 
 		public DbSet<User> Users { get; set; }
 
