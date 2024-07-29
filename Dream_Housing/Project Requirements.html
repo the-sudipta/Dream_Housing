@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Management System Requirements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #07092f;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #07092f;
+            color: #fff;
+        }
+
+        .database-diagram {
+            margin-top: 20px;
+        }
+
+            .database-diagram img {
+                max-width: 100%;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Real Estate Management System Requirements</h1>
+
+        <h2>Features</h2>
+        <table>
+            <tr>
+                <th>Admin</th>
+                <th>Agent</th>
+                <th>Client</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Property Management: Add, edit, and delete property listings.</li>
+                        <li>Agent Management: Manage real estate agent profiles and assignments.</li>
+                        <li>Client Management: Oversee client profiles and interactions.</li>
+                        <li>Reports: Generate reports on property sales, agent performance, and client interactions.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Property Listings: Create and manage property listings.</li>
+                        <li>Client Management: Track and manage client inquiries and interactions.</li>
+                        <li>Appointment Scheduling: Schedule and manage property viewings and meetings.</li>
+                        <li>Communication: Communicate with clients for property updates and inquiries.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Profile Management: Manage personal profile and property preferences.</li>
+                        <li>Property Browsing: Browse and search for properties.</li>
+                        <li>Appointment Booking: Book and view upcoming property viewings.</li>
+                        <li>Feedback: Provide feedback on property listings and agent services.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <h2>Database Structure</h2>
+        <table>
+            <tr>
+                <th>Tables</th>
+                <th>Columns</th>
+            </tr>
+            <tr>
+                <td>Users</td>
+                <td>ID, Password, Email, Role, CreatedAt, UpdatedAt</td>
+            </tr>
+            <tr>
+                <td>Properties</td>
+                <td>ID, Agent_ID, Title, Description, Location, Price, Status, CreatedAt, UpdatedAt</td>
+            </tr>
+            <tr>
+                <td>Agents</td>
+                <td>ID, User_ID, Name, ContactInfo, CreatedAt, UpdatedAt</td>
+            </tr>
+            <tr>
+                <td>Clients</td>
+                <td>ID, User_ID, Name, ContactInfo, Preferences, CreatedAt, UpdatedAt</td>
+            </tr>
+            <tr>
+                <td>Appointments</td>
+                <td>ID, Property_ID, Client_ID, Date, Time, Status, CreatedAt, UpdatedAt</td>
+            </tr>
+            <tr>
+                <td>Feedback</td>
+                <td>ID, Property_ID, Client_ID, Rating, Comments, SubmittedAt</td>
+            </tr>
+        </table>
+
+        <h2>Relationships</h2>
+        <ul>
+            <li>Users to Agents: One-to-One (Each user can be an agent with one profile)</li>
+            <li>Users to Clients: One-to-One (Each user can be a client with one profile)</li>
+            <li>Agents to Properties: One-to-Many (Agents can manage multiple properties)</li>
+            <li>Clients to Appointments: One-to-Many (Clients can book multiple appointments)</li>
+            <li>Properties to Appointments: One-to-Many (Properties can have multiple appointments)</li>
+            <li>Clients to Feedback: One-to-Many (Clients can provide feedback for multiple properties)</li>
+            <li>Properties to Feedback: One-to-Many (Properties can have multiple feedbacks)</li>
+        </ul>
+
+        <h2>Current Server Name</h2>
+        <p>ANONYMOUS\SQLEXPRESS</p>
+        <h2>Database name</h2>
+        <p>dream_housing</p>
+
+        <h2>Database Diagram</h2>
+        <div class="database-diagram">
+            <img src="database-diagram.png" alt="Database Diagram">
+        </div>
+    </div>
+</body>
+</html>

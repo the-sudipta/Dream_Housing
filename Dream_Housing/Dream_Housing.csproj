@@ -150,6 +150,11 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LandingPageController.cs" />
     <Compile Include="Database\DatabaseContext.cs" />
+    <Compile Include="Database\Models\Agent.cs" />
+    <Compile Include="Database\Models\Appointment.cs" />
+    <Compile Include="Database\Models\Client.cs" />
+    <Compile Include="Database\Models\Feedback.cs" />
+    <Compile Include="Database\Models\Property.cs" />
     <Compile Include="Database\Models\User.cs" />
     <Compile Include="DTOs\UserDTO.cs" />
     <Compile Include="Global.asax.cs">
@@ -158,6 +163,14 @@
     <Compile Include="Migrations\202407130951482_Creating_User_table.cs" />
     <Compile Include="Migrations\202407130951482_Creating_User_table.Designer.cs">
       <DependentUpon>202407130951482_Creating_User_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407180956370_CreatingPropertiesAgentsAppointmentsFeedbacksTable.cs" />
+    <Compile Include="Migrations\202407180956370_CreatingPropertiesAgentsAppointmentsFeedbacksTable.Designer.cs">
+      <DependentUpon>202407180956370_CreatingPropertiesAgentsAppointmentsFeedbacksTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407291409271_Creating_Client_Table.cs" />
+    <Compile Include="Migrations\202407291409271_Creating_Client_Table.Designer.cs">
+      <DependentUpon>202407291409271_Creating_Client_Table.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -275,6 +288,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Project Requirements.html" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -382,6 +396,7 @@
     <Content Include="Content\login\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
     <Content Include="Content\login\vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="Content\login\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include=".editorconfig" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -433,6 +448,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202407130951482_Creating_User_table.resx">
       <DependentUpon>202407130951482_Creating_User_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407180956370_CreatingPropertiesAgentsAppointmentsFeedbacksTable.resx">
+      <DependentUpon>202407180956370_CreatingPropertiesAgentsAppointmentsFeedbacksTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407291409271_Creating_Client_Table.resx">
+      <DependentUpon>202407291409271_Creating_Client_Table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

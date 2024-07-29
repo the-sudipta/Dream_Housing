@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dream_Housing.Database.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -25,5 +26,22 @@ namespace Dream_Housing.Database
 
 		[Required]
 		public string UpdatedAt { get; set; }
+
+
+
+		//// One to One Navigation property to the Agent entity.
+		//public virtual Agent Agent { get; set; }
+
+		//// Relationship => One to Many with Property. One-Side = User
+		//public virtual ICollection<Property> Properties { get; set; }
+
+		//// Relationship => One to Many with Appointment. One-Side = User
+		//public virtual ICollection<Appointment> Appointments { get; set; }
+
+		//public User()
+		//{
+		//	Properties = new List<Property>();
+		//	Appointments = new List<Appointment>();
+		//}
 	}
 }

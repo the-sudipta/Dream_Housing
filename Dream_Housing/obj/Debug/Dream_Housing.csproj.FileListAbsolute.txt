@@ -92,3 +92,5 @@ E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\EntityFramework.xml
 E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\EntityFramework.SqlServer.xml
 E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\obj\Debug\Dream_Housing.Migrations.Creating_User_table.resources
 E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\obj\Debug\Dream_Housing.csproj.GenerateResource.cache
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\obj\Debug\Dream_Housing.Migrations.CreatingPropertiesAgentsAppointmentsFeedbacksTable.resources
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\obj\Debug\Dream_Housing.Migrations.Creating_Client_Table.resources
