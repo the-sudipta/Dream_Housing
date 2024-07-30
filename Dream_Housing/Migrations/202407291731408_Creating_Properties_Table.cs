@@ -3,19 +3,20 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Creating_Client_Table : DbMigration
+    public partial class Creating_Properties_Table : DbMigration
     {
         public override void Up()
         {
             CreateTable(
-                "dbo.Clients",
+                "dbo.Properties",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        User_ID = c.Int(nullable: false),
-                        Name = c.String(nullable: false),
-                        ContactInfo = c.String(nullable: false),
-                        Preferences = c.String(nullable: false),
+                        Title = c.String(nullable: false),
+                        Description = c.String(nullable: false),
+                        Location = c.String(nullable: false),
+                        Price = c.Double(nullable: false),
+                        Status = c.String(nullable: false),
                         CreatedAt = c.String(nullable: false),
                         UpdatedAt = c.String(nullable: false),
                     })
@@ -25,7 +26,7 @@
         
         public override void Down()
         {
-            DropTable("dbo.Clients");
+            DropTable("dbo.Properties");
         }
     }
 }

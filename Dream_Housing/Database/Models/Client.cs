@@ -9,8 +9,8 @@ namespace Dream_Housing.Database.Models
 {
 	public class Client
 	{
-		////// This property is both the primary key and the foreign key.
-		////[Key, ForeignKey("User")]
+		// This property is both the primary key and the foreign key.
+		[Key, ForeignKey("User")]
 		public int Id { get; set; }
 
 		[Required]
@@ -31,7 +31,15 @@ namespace Dream_Housing.Database.Models
 		[Required]
 		public string UpdatedAt { get; set; }
 
-		//// Navigation property to the User entity.
-		//public virtual User User { get; set; }
+		// Navigation property to the User entity.
+		public virtual User User { get; set; }
+
+		// Relationship => One to Many with Appointment. One-Side = Client
+		public virtual ICollection<Appointment> Appointments { get; set; }
+
+		public Client()
+		{
+			Appointments = new List<Appointment>();
+		}
 	}
 }

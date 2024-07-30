@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -11,8 +12,11 @@ namespace Dream_Housing.Database.Models
 		[Key]
 		public int Id { get; set; }
 
+		// Relationship => Many to One with Property. Many Side = Feedback
 		[Required]
+		[ForeignKey("Property")]
 		public int Property_ID { get; set; }
+		public virtual Property Property { get; set; }
 
 		[Required]
 		public int Client_ID { get; set; }
@@ -25,5 +29,8 @@ namespace Dream_Housing.Database.Models
 
 		[Required]
 		public string SubmittedAt { get; set; }
+
+
+		
 	}
 }

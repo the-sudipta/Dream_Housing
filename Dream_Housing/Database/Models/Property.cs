@@ -35,20 +35,30 @@ namespace Dream_Housing.Database.Models
 
 
 
-		//// Relationship => Many to One with User. Many Side = Property
-		//[Required]
-		//[ForeignKey("User")]
-		//public int Agent_ID { get; set; }
-		//public virtual User User { get; set; }
+		// Relationship => Many to One with Agent. Many Side = Property
+		[Required]
+		[ForeignKey("Agent")]
+		public int Agent_ID { get; set; }
+		public virtual Agent Agent { get; set; }
 
 		/////===================================================================///
 
-		//// Relationship => One to Many with Appointment. One-Side = Property
-		//public virtual ICollection<Appointment> Appointments { get; set; }
+		// Relationship => One to Many with Appointment. One-Side = Property
+		public virtual ICollection<Appointment> Appointments { get; set; }
 
-		//public Property() 
-		//{
-		//	Appointments = new List<Appointment>();
-		//}
+
+		/////===================================================================///
+
+		// Relationship => One to Many with Feedback. One-Side = Property
+		public virtual ICollection<Feedback> Feedbacks { get; set; }
+
+
+		public Property()
+		{
+			Appointments = new List<Appointment>();
+			Feedbacks = new List<Feedback>();
+		}
+
+
 	}
 }

@@ -7,13 +7,13 @@ namespace Dream_Housing.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class Creating_Client_Table : IMigrationMetadata
+    public sealed partial class Creating_Clients_Table : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Creating_Client_Table));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Creating_Clients_Table));
         
         string IMigrationMetadata.Id
         {
-            get { return "202407291409271_Creating_Client_Table"; }
+            get { return "202407291736009_Creating_Clients_Table"; }
         }
         
         string IMigrationMetadata.Source

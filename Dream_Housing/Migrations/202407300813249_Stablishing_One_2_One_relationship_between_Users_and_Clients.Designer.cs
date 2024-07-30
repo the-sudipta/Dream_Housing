@@ -7,13 +7,13 @@ namespace Dream_Housing.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class CreatingPropertiesAgentsAppointmentsFeedbacksTable : IMigrationMetadata
+    public sealed partial class Stablishing_One_2_One_relationship_between_Users_and_Clients : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CreatingPropertiesAgentsAppointmentsFeedbacksTable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Stablishing_One_2_One_relationship_between_Users_and_Clients));
         
         string IMigrationMetadata.Id
         {
-            get { return "202407180956370_CreatingPropertiesAgentsAppointmentsFeedbacksTable"; }
+            get { return "202407300813249_Stablishing_One_2_One_relationship_between_Users_and_Clients"; }
         }
         
         string IMigrationMetadata.Source

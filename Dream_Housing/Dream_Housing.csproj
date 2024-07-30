@@ -160,17 +160,53 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202407130951482_Creating_User_table.cs" />
-    <Compile Include="Migrations\202407130951482_Creating_User_table.Designer.cs">
-      <DependentUpon>202407130951482_Creating_User_table.cs</DependentUpon>
+    <Compile Include="Migrations\202407291730333_Creating_Users_Table.cs" />
+    <Compile Include="Migrations\202407291730333_Creating_Users_Table.Designer.cs">
+      <DependentUpon>202407291730333_Creating_Users_Table.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202407180956370_CreatingPropertiesAgentsAppointmentsFeedbacksTable.cs" />
-    <Compile Include="Migrations\202407180956370_CreatingPropertiesAgentsAppointmentsFeedbacksTable.Designer.cs">
-      <DependentUpon>202407180956370_CreatingPropertiesAgentsAppointmentsFeedbacksTable.cs</DependentUpon>
+    <Compile Include="Migrations\202407291731408_Creating_Properties_Table.cs" />
+    <Compile Include="Migrations\202407291731408_Creating_Properties_Table.Designer.cs">
+      <DependentUpon>202407291731408_Creating_Properties_Table.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202407291409271_Creating_Client_Table.cs" />
-    <Compile Include="Migrations\202407291409271_Creating_Client_Table.Designer.cs">
-      <DependentUpon>202407291409271_Creating_Client_Table.cs</DependentUpon>
+    <Compile Include="Migrations\202407291732338_Creating_Agents_Table.cs" />
+    <Compile Include="Migrations\202407291732338_Creating_Agents_Table.Designer.cs">
+      <DependentUpon>202407291732338_Creating_Agents_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407291733486_Creating_Appointments_Table.cs" />
+    <Compile Include="Migrations\202407291733486_Creating_Appointments_Table.Designer.cs">
+      <DependentUpon>202407291733486_Creating_Appointments_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407291734288_Creating_Feedbacks_Table.cs" />
+    <Compile Include="Migrations\202407291734288_Creating_Feedbacks_Table.Designer.cs">
+      <DependentUpon>202407291734288_Creating_Feedbacks_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407291736009_Creating_Clients_Table.cs" />
+    <Compile Include="Migrations\202407291736009_Creating_Clients_Table.Designer.cs">
+      <DependentUpon>202407291736009_Creating_Clients_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407300809082_Stablishing_One_2_One_relationship_between_Users_and_Agents.cs" />
+    <Compile Include="Migrations\202407300809082_Stablishing_One_2_One_relationship_between_Users_and_Agents.Designer.cs">
+      <DependentUpon>202407300809082_Stablishing_One_2_One_relationship_between_Users_and_Agents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407300813249_Stablishing_One_2_One_relationship_between_Users_and_Clients.cs" />
+    <Compile Include="Migrations\202407300813249_Stablishing_One_2_One_relationship_between_Users_and_Clients.Designer.cs">
+      <DependentUpon>202407300813249_Stablishing_One_2_One_relationship_between_Users_and_Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407300818418_Stablishing_One_2_Many_relationship_between_Agents_and_Properties.cs" />
+    <Compile Include="Migrations\202407300818418_Stablishing_One_2_Many_relationship_between_Agents_and_Properties.Designer.cs">
+      <DependentUpon>202407300818418_Stablishing_One_2_Many_relationship_between_Agents_and_Properties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407300824035_Stablishing_One_2_Many_relationship_between_Clients_and_Appointments.cs" />
+    <Compile Include="Migrations\202407300824035_Stablishing_One_2_Many_relationship_between_Clients_and_Appointments.Designer.cs">
+      <DependentUpon>202407300824035_Stablishing_One_2_Many_relationship_between_Clients_and_Appointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407300826074_Stablishing_One_2_Many_relationship_between_Properties_and_Appointments.cs" />
+    <Compile Include="Migrations\202407300826074_Stablishing_One_2_Many_relationship_between_Properties_and_Appointments.Designer.cs">
+      <DependentUpon>202407300826074_Stablishing_One_2_Many_relationship_between_Properties_and_Appointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407300847274_Stablishing_One_2_Many_relationship_between_Properties_and_Feedbacks.cs" />
+    <Compile Include="Migrations\202407300847274_Stablishing_One_2_Many_relationship_between_Properties_and_Feedbacks.Designer.cs">
+      <DependentUpon>202407300847274_Stablishing_One_2_Many_relationship_between_Properties_and_Feedbacks.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -446,14 +482,41 @@
     <Content Include="Scripts\jquery-3.7.0.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202407130951482_Creating_User_table.resx">
-      <DependentUpon>202407130951482_Creating_User_table.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202407291730333_Creating_Users_Table.resx">
+      <DependentUpon>202407291730333_Creating_Users_Table.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202407180956370_CreatingPropertiesAgentsAppointmentsFeedbacksTable.resx">
-      <DependentUpon>202407180956370_CreatingPropertiesAgentsAppointmentsFeedbacksTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202407291731408_Creating_Properties_Table.resx">
+      <DependentUpon>202407291731408_Creating_Properties_Table.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202407291409271_Creating_Client_Table.resx">
-      <DependentUpon>202407291409271_Creating_Client_Table.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202407291732338_Creating_Agents_Table.resx">
+      <DependentUpon>202407291732338_Creating_Agents_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407291733486_Creating_Appointments_Table.resx">
+      <DependentUpon>202407291733486_Creating_Appointments_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407291734288_Creating_Feedbacks_Table.resx">
+      <DependentUpon>202407291734288_Creating_Feedbacks_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407291736009_Creating_Clients_Table.resx">
+      <DependentUpon>202407291736009_Creating_Clients_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407300809082_Stablishing_One_2_One_relationship_between_Users_and_Agents.resx">
+      <DependentUpon>202407300809082_Stablishing_One_2_One_relationship_between_Users_and_Agents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407300813249_Stablishing_One_2_One_relationship_between_Users_and_Clients.resx">
+      <DependentUpon>202407300813249_Stablishing_One_2_One_relationship_between_Users_and_Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407300818418_Stablishing_One_2_Many_relationship_between_Agents_and_Properties.resx">
+      <DependentUpon>202407300818418_Stablishing_One_2_Many_relationship_between_Agents_and_Properties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407300824035_Stablishing_One_2_Many_relationship_between_Clients_and_Appointments.resx">
+      <DependentUpon>202407300824035_Stablishing_One_2_Many_relationship_between_Clients_and_Appointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407300826074_Stablishing_One_2_Many_relationship_between_Properties_and_Appointments.resx">
+      <DependentUpon>202407300826074_Stablishing_One_2_Many_relationship_between_Properties_and_Appointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407300847274_Stablishing_One_2_Many_relationship_between_Properties_and_Feedbacks.resx">
+      <DependentUpon>202407300847274_Stablishing_One_2_Many_relationship_between_Properties_and_Feedbacks.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

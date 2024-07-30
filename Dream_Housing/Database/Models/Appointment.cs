@@ -27,18 +27,20 @@ namespace Dream_Housing.Database.Models
 		[Required]
 		public string UpdatedAt { get; set; }
 
-
-
-		//[Required]
-		//[ForeignKey("Property")]
-		//public int Property_ID { get; set; }
-		//public virtual Property Property { get; set; }
+		[Required]
+		[ForeignKey("Client")]
+		public int Client_ID { get; set; }
+		public virtual Client Client { get; set; }
 
 		/////===================================================================///
 
-		//[Required]
-		//[ForeignKey("User")]
-		//public int Client_ID { get; set; }
-		//public virtual User User { get; set; }
+		[Required]
+		[ForeignKey("Property")]
+		public int Property_ID { get; set; }
+		public virtual Property Property { get; set; }
+
+
+
+
 	}
 }

@@ -3,18 +3,18 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Creating_User_table : DbMigration
+    public partial class Creating_Agents_Table : DbMigration
     {
         public override void Up()
         {
             CreateTable(
-                "dbo.Users",
+                "dbo.Agents",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Email = c.String(nullable: false),
-                        Password = c.String(nullable: false),
-                        Role = c.String(nullable: false),
+                        User_ID = c.Int(nullable: false),
+                        Name = c.String(nullable: false),
+                        ContactInfo = c.String(nullable: false),
                         CreatedAt = c.String(nullable: false),
                         UpdatedAt = c.String(nullable: false),
                     })
@@ -24,7 +24,7 @@
         
         public override void Down()
         {
-            DropTable("dbo.Users");
+            DropTable("dbo.Agents");
         }
     }
 }

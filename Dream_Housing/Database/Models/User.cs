@@ -29,19 +29,22 @@ namespace Dream_Housing.Database
 
 
 
-		//// One to One Navigation property to the Agent entity.
-		//public virtual Agent Agent { get; set; }
+		// One to One Navigation property to the Agent entity.
+		public virtual Agent Agent { get; set; }
 
-		//// Relationship => One to Many with Property. One-Side = User
+		// One to One Navigation property to the Client entity.
+		public virtual Client Client { get; set; }
+
+		// Relationship => One to Many with Property. One-Side = User
 		//public virtual ICollection<Property> Properties { get; set; }
 
-		//// Relationship => One to Many with Appointment. One-Side = User
+		// Relationship => One to Many with Appointment. One-Side = User
 		//public virtual ICollection<Appointment> Appointments { get; set; }
 
 		//public User()
 		//{
 		//	Properties = new List<Property>();
-		//	Appointments = new List<Appointment>();
+		//	////Appointments = new List<Appointment>();
 		//}
 	}
 }

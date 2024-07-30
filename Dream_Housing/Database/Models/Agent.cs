@@ -10,7 +10,7 @@ namespace Dream_Housing.Database.Models
 	public class Agent
 	{
 		//// This property is both the primary key and the foreign key.
-		//[Key, ForeignKey("User")]
+		[Key, ForeignKey("User")]
 		public int Id { get; set; }
 
 		[Required]
@@ -29,6 +29,15 @@ namespace Dream_Housing.Database.Models
 		public string UpdatedAt { get; set; }
 
 		//// Navigation property to the User entity.
-		//public virtual User User { get; set; }
+		public virtual User User { get; set; }
+
+		//=================================================================================
+		// Relationship => One to Many with Property. One-Side = Agent
+		public virtual ICollection<Property> Properties { get; set; }
+
+		public Agent()
+		{
+			Properties = new List<Property>();
+		}
 	}
 }
