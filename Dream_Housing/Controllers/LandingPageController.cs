@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Dream_Housing.Utilities;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
@@ -13,7 +15,15 @@ namespace Dream_Housing.Controllers
 		//[Authorize]
 		public ActionResult Index()
         {
-            return View();
+
+			// Password Hashing Test
+			//string password = "sudipta";
+			//Debug.WriteLine("Password: " + password);
+			//string hashedPassword = Password.Hash(password);
+			//Debug.WriteLine("Hashed Password: " + hashedPassword);
+			//Debug.WriteLine("Verify Password: " + Password.Verify(password, hashedPassword));
+
+			return View();
         }
 		[Authorize]
 		public ActionResult About()

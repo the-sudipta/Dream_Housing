@@ -30,7 +30,5 @@ namespace Dream_Housing.Database.Models
 		[Required]
 		public string SubmittedAt { get; set; }
 
-
-		
 	}
 }

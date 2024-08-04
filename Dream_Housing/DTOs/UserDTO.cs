@@ -22,10 +22,14 @@ namespace Dream_Housing.DTOs
 		ErrorMessage = "Password must be at least 8 characters long, and contain at least one number, one uppercase letter, one lowercase letter, and one special character.")]
 		public string Password { get; set; }
 
+		// Applying the custom Role
+		[Role("Admin", "Agent", "Client")] 
 		public string Role { get; set; }
 
+		[CurrentDateTime]
 		public string CreatedAt { get; set; }
 
+		[CurrentDateTime]
 		public string UpdatedAt { get; set; }
 	}
 }

@@ -103,3 +103,13 @@ E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\obj\Debug\Dream_Housing.M
 E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\obj\Debug\Dream_Housing.Migrations.Stablishing_One_2_Many_relationship_between_Clients_and_Appointments.resources
 E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\obj\Debug\Dream_Housing.Migrations.Stablishing_One_2_Many_relationship_between_Properties_and_Appointments.resources
 E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\obj\Debug\Dream_Housing.Migrations.Stablishing_One_2_Many_relationship_between_Properties_and_Feedbacks.resources
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\BCrypt.Net-Next.dll
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\System.Buffers.dll
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\System.Memory.dll
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\System.Numerics.Vectors.dll
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\BCrypt.Net-Next.xml
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\System.Buffers.xml
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\System.Memory.xml
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\System.Numerics.Vectors.xml
+E:\Yaarian\PROGRAMING\.NET\Dream_Housing\Dream_Housing\bin\System.Runtime.CompilerServices.Unsafe.xml
